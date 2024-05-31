@@ -45,8 +45,8 @@ return [
                 "name" => "John Doe"
             ),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME', '223f3045-ea3f-4d0a-ab12-713cf8f62626'),
-            'password' => env('MAIL_PASSWORD', '7ef266a3-2570-4e59-a57b-4894ac87f0e3'),
+            'username' => env('MAIL_USERNAME', ''),
+            'password' => env('MAIL_PASSWORD', ''),
             // "sendmail" => "/usr/sbin/sendmail -bs",
             'network defaultCredetials' => false,
             'enableSsl' => false,
