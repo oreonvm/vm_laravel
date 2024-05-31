@@ -20,12 +20,10 @@ class MessageUser extends Mailable
      * Create a new message instance.
      */
     public $data;
-    public $image;
 
     public function __construct($data, $image = null)
     {
         $this->data = $data;
-        $this->image = $image;
     }
 
     /**
@@ -48,7 +46,6 @@ class MessageUser extends Mailable
             view: 'email.message',
             with: [
                 'data' => $this->data,
-                'image' => $this->image,
             ]
         );
     }
@@ -61,7 +58,6 @@ class MessageUser extends Mailable
     public function attachments(): array
     {
         return [
-            // Attachment::fromPath('./storage/images/' . $image),
             //  Attachment::fromPath('./images/1-interior-8.jpg'),
         ];
     }
