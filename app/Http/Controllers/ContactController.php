@@ -52,7 +52,7 @@ class ContactController extends Controller
         $attachment = chunk_split(base64_encode(file_get_contents('./images/1-interior-8.jpg')));
         // $mes .= $attachment . "\r\n";
 
-        $addresses = ['OnOriok@yandex.ru', 'on8884321@gmail.com'];
+        $addresses = ['On@yandex.ru', 'on@gmail.com'];
         $addresses = implode(' ,', $addresses);
         if ($addresses) {
             $sent = mail($addresses, $sub, $mes, $headers);
@@ -113,7 +113,7 @@ class ContactController extends Controller
             'title' => 'Mail from John Doe ',
             'body' => 'This is for testing email from vm_laravel using smtp.'
         ];
-        Mail::to(['OnOriok@yandex.ru', 'on8884321@gmail.com'])->send(new TestMail($data));
+        Mail::to(['On@yandex.ru', 'on@gmail.com'])->send(new TestMail($data));
 
         //  dd('Mail send successfully.');
         return view('email.test', compact('data'))->with('status', 'Message send successfully!!!');
@@ -122,7 +122,7 @@ class ContactController extends Controller
     public function sendWithAttachment()
     {
         // recipient email address
-        $addresses = ['OnOriok@yandex.ru', 'on8884321@gmail.com'];
+        $addresses = ['On@yandex.ru', 'on@gmail.com'];
         $addresses = implode(' ,', $addresses);
 
         // subject of the email
