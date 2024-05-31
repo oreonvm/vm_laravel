@@ -1,0 +1,145 @@
+.menu>ul {
+	margin: 0 auto;
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	position: relative;
+	/* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+	box-sizing: border-box;
+	border: 1px solid #7f7fc9;
+	box-shadow: 3px 3px 3px 0 #181852;
+	border-radius: 8px;
+}
+
+.menu>ul:before,
+.menu>ul:after {
+	content: "";
+	display: table;
+}
+
+.menu>ul:after {
+	clear: both;
+}
+
+.menu>ul>li {
+
+	border-radius: 8px;
+	float: left;
+	background: #ebf7f8;
+	padding: 0;
+	margin: 0;
+}
+
+.menu>ul>li a {
+
+	font-weight: 700;
+	text-decoration: none;
+	padding: 1.5em 3em;
+	display: block;
+}
+
+.menu>ul>li:hover {
+	font-size: 14px;
+	background: #f0f0f0;
+	border-radius: 8px;
+	border: 1px solid #7f7fc9;
+}
+
+.menu>ul>li>ul {
+	display: none;
+	width: 100%;
+	border-radius: 8px;
+	background: #f0f0f0;
+	padding: 20px;
+	position: absolute;
+	z-index: 99;
+	left: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+.menu>ul>li>ul:before,
+.menu>ul>li>ul:after {
+	content: "";
+	display: table;
+}
+
+.menu>ul>li>ul:after {
+	clear: both;
+}
+
+.menu>ul>li>ul>li {
+	margin: 0;
+	padding-bottom: 0;
+	list-style: none;
+	width: 25%;
+	background: none;
+	float: left;
+}
+
+.menu>ul>li>ul>li a {
+	color: #000;
+	padding: .2em 0;
+	width: 95%;
+	display: block;
+
+	/* border-bottom: 1px solid #ccc;*/
+}
+
+.menu>ul>li>ul>li a:hover {
+	color: blueviolet;
+	font-weight: 700;
+	text-decoration: underline;
+	background-color: #fff;
+	border-radius: 8px;
+	width: 70%;
+}
+
+.menu>ul>li>ul>li>ul {
+	display: block;
+	padding: 0;
+	margin: 10px 0 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+.menu>ul>li>ul>li>ul:before,
+.menu>ul>li>ul>li>ul:after {
+	content: "";
+	display: table;
+}
+
+.menu>ul>li>ul>li>ul:after {
+	clear: both;
+}
+
+.menu>ul>li>ul>li>ul>li {
+	float: left;
+	width: 100%;
+	padding: 10px 0;
+	margin: 0;
+	font-size: .9em;
+}
+
+.menu>ul>li>ul>li>ul>li a {
+	border: 0;
+}
+
+.menu>ul>li>ul.normal-sub {
+	width: 300px;
+	left: auto;
+	padding: 10px 20px;
+	border: 1px solid #7f7fc9;
+	box-shadow: 4px 4px 5px 0 #0000001a;
+	border-radius: 8px;
+}
+
+.menu>ul>li>ul.normal-sub>li {
+	width: 100%;
+}
+
+.menu>ul>li>ul.normal-sub>li a {
+	border: 0;
+	padding: 1em 0;
+}

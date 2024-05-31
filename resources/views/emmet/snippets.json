@@ -1,0 +1,15 @@
+{
+	"html": {
+		"snippets": {
+			"d": "<div class=\"${1}\">${2}</div>",
+			"i": "<img class=\"${1}\" src=\"${2}\" alt=\"${3}\">",
+			"m": "nav.menu>ul>li*5>a:link*1",
+			"f"	:  "form[method=\"${post}\"]>label[for=\"${name}\"][type=\"${text}\"]{Your name:}+input[type=\"${text}\"][name=\"${name}\"][required=\"${required}\"][placeholder=\"${Your name}\"]+label[for=\"${password}\"]{Your password:}+input[type=\"${password}\"][name=\"${password}\"][placeholder=\"${password}\"]+label[for=\"${email}\"]{Your email:}>br+input[type=\"${email}\"][name=\"${email}\"][placeholder=\"${Email}\"]+label[for=\"${message}\"]>br+textarea[type=\"${text}\"][name=\"${message}\"][id=\"${message}\"][placeholder=\"${message}\"]",
+			"b":  "<button type=\"${submit}\" class=\"${1}\">${2}</button>",
+			"pic": "picture>source[srcset=\"${1}\"][type=\"${image/webp}\"]+img[src=\"${2}\"]",
+			"slid": ".something_class_block>.swiper-wrapper>.swiper-slide.${<!-- -->}*4+{</div>}+{<!--======== pagination ========-->}+.swiper-pagination+{<!--====== navigation buttons ========-->}+.swiper-button-prev+.swiper-button-next+{<!--======= scrollbar =======-->}+.swiper-scrollbar",
+			"boo": "section.{}>.container>.row>.col-lg-6+.col-lg-6"
+
+		}
+	}
+}
