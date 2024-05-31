@@ -1,2 +1,2 @@
 # vm_laravel
-Simple pattern for blog
+A simple blog template with an admin panel for administrators from AdminLTE
