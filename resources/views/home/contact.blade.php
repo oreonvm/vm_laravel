@@ -14,7 +14,7 @@
         <div class="post_show">
             <div class="col-xs-12 col-sm-12 col-md-8">
                 @if (!$user)
-                    <div class="alert alert-danger">{{ $message = 'Чтобы отправить сообщение, Вы должны авторизоваться!.' }}
+                    <div class="alert alert-danger">{{ $message = 'Please log in before sending a message!' }}
                     </div>
                 @endif
                 <h1 class="title_product">Contact us</h1>
