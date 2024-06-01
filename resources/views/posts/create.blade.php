@@ -15,7 +15,7 @@
     </nav>
     <div id="center">New Post</div>
     @if (!$user)
-        <div class="alert alert-danger">{{ $message = 'Чтобы создать пост, Вы должны авторизоваться!.' }}</div>
+        <div class="alert alert-danger">{{ $message = 'Please, authorize before to create post!' }}</div>
     @endif
     @if (Session::has('status'))
         <div class="alert alert-success">
