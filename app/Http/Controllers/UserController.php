@@ -57,11 +57,7 @@ class UserController extends Controller
             'password' =>  Hash::make($request->password),
             'avatar' => $avatar ?? null,
         ]);
-        // $request->session()->flash('success', 'Вы успешно зарегистрировались!');
-        // info('Вы успешно зарегистрировались!');
-        //  Auth::login($user);
-        // dump($user);
-        return redirect('/login')->with('status', "Вы успешно зарегистрировались!");
+        return redirect('/login')->with('status', "You have successfully registered!");
         // return redirect('/login');
     }
 
