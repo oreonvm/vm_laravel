@@ -37,12 +37,12 @@ return [
         'smtp' => [
             'transport' => 'smtp',
             // 'url' => env('MAIL_URL'),
-            'host' => env('MAIL_HOST', 'app.debugmail.io'),
-            // 'port' => env('MAIL_PORT', 587),
-            'port' => env('MAIL_PORT', 25),
+            'host' => env('MAIL_HOST', ''),
+            // 'port' => env('MAIL_PORT', ),
+            'port' => env('MAIL_PORT', ),
             "from" => array(
-                "address" => "john.doe@example.org",
-                "name" => "John Doe"
+                "address" => "",
+                "name" => ""
             ),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
             'username' => env('MAIL_USERNAME', ''),
@@ -123,8 +123,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'john.doe@example.org'),
-        'name' => env('MAIL_FROM_NAME', 'John Doe'),
+        'address' => env('MAIL_FROM_ADDRESS', ''),
+        'name' => env('MAIL_FROM_NAME', ''),
     ],
 
     /*
