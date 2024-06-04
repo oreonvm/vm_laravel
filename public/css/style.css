@@ -836,10 +836,12 @@ ul.menu_drop li.item {
 }
 
 .data_views {
-    display: block;
+    /* display: block;
     position: relative;
     top: -46px;
-    left: 181px;
+    left: 251px; */
+    display: initial;
+    margin: 4px 5px 4px 17px;
 }
 
 /* =======>> НЕ РАБОТАЕТ ?!!? ============ */
