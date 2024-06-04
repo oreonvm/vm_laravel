@@ -21,13 +21,19 @@
 
                     <div class="block_post">
                         <h1 class="title_post">{{ $post->title }}</h1>
-                        @php
-                            $post_date = date('d.m.Y H:i', strtotime($post->updated_at));
+                         @php
+                            $post_date = date('d.m.Y H:i', strtotime($post->created_at));
+                            $last_view = date('d.m.Y H:i', strtotime($post->updated_at));
                         @endphp
                         <img src="{{ asset('storage/' . $post->image) }}" width="200" alt="">
                         <small>
-                            <div class="date_post">{{ $post_date }}</div>
+                            <div class="date_post">Create: {{ $post_date }}</div>
+                            <div class="date_post">Last view: {{ $last_view }}</div>
                         </small>
+                        {{-- &nbsp;&nbsp;
+                        <small>
+                            <div class="date_post">Last view: {{ $last_view }}</div>
+                        </small> --}}
                         &nbsp;&nbsp;<div class="data_views">
                             <i class="fa fa-eye"></i><small>&nbsp;{{ $post->views }} views</small>
                         </div>
