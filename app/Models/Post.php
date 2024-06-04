@@ -44,7 +44,7 @@ class Post extends Model
     public function getPostDate()
     {
         // Carbon::parse($this->created_at)->diffForHumans();
-        return  date("d.m.Y ", strtotime($this->updated_at));
+        return  date("d.m.Y ", strtotime($this->created_at));
     }
 
     /**
