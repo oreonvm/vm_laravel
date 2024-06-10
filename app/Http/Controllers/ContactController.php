@@ -27,7 +27,7 @@ class ContactController extends Controller
         //         'body' => 'This is for testing email from vm_laravel using smtp.'
         //     ];
         //     // Mail::to('healthylifestyle451@gmail.com')->send(new TestMail($data));
-        //     $emails = ['OnOriok@yandex.ru', 'on8884321@gmail.com'];
+        //     $emails = ['On@yandex.ru', 'on@gmail.com'];
         //      $emails = implode(' ,', $emails);
         //     if($emails) {
         //   // =========================>> This not working ===============================
