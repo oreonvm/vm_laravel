@@ -29,6 +29,13 @@
                         <small>
                             <div class="date_post">Create: {{ $post_date }}</div>
                             <div class="date_post">Last view: {{ $last_view }}</div>
+                            <div class="user_post">Author:
+                                @foreach ($users as $user)
+                                    @if ($user->email == $post->email)
+                                        {{ $user->name }}
+                                    @endif
+                                @endforeach
+                            </div>
                         </small>
                         {{-- &nbsp;&nbsp;
                         <small>
