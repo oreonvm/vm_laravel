@@ -214,11 +214,13 @@ class PostController extends Controller
      */
     public function show(string $id)
     {
+        $users = User::query()->orderBy('id', 'asc')->get();
+        // dd($users);
         $post =  Post::find($id);
         $post->views += 1;
         $post->update();
         if ($post === null) abort(404, 'This page not found! ');
-        return View::make('posts.post', ['title' => 'post', 'post' => $id], compact('post', 'id'))->with('post', $post);
+        return View::make('posts.post', ['title' => 'post', 'post' => $id], compact('post', 'id', 'users'))->with('post', $post);
     }
 
     /**
