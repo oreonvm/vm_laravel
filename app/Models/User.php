@@ -26,6 +26,8 @@ class User extends Authenticatable
         'password',
         'avatar',
         'post_id',
+         'token',
+        'tstamp',
     ];
 
     /**
