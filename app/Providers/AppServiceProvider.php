@@ -31,8 +31,8 @@ class AppServiceProvider extends ServiceProvider
             // dump($query->sql, $query->bindings);
             Log::channel('customsqllogs')->info($query->sql);
         });
-        // ============>> ЗДЕСЬ ПОКАЗЫВАЕМ  МЕНЮ НА ОПРЕДЕЛЕН СТРАНИЦАХ   =============
-        view()->composer(['home*', 'user', 'contact', 'posts.create', 'user.register', 'user.alert', 'user.login', 'user.my_account', 'posts.post', 'posts.edit', 'search'], function (View $view) {
+        // =======================>> Here show menu on specific pages  =============================
+        view()->composer(['home*', 'user', 'contact', 'posts.create', 'user.register', 'user.alert', 'user.login', 'user.my_account', 'user.forgot-password', 'user.reset-password', 'posts.post', 'posts.edit', 'search'], function (View $view) {
             // $menu = '<ul>';
             // $menu .= '<li style="list-style: none;"><a href=" ' . route('home.index') . '">Home</a></li>';
             // $menu .= '<li style="list-style: none;"><a href=" ' . route('home.test') . '">Test</a></li>';
