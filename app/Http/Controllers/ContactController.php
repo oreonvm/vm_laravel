@@ -12,13 +12,6 @@ use Illuminate\Mail\Mailables\Attachment;
 
 class ContactController extends Controller
 {
-
-    // public function index()
-    // {
-    //     $user = auth()->user();
-    //     return view('home.contact')
-    // }
-
     public function poslatyPtichku()
     {
         // ========>> Sending mail using Laravel doesn't work  - getting an error ?!?! ====================
@@ -37,7 +30,7 @@ class ContactController extends Controller
 
         //  ========>>>  Sending mail  in format html using function mail() work successfully  !!! ==================
         $sender = "Laravel";
-        $email = "support@laravel.health-spiritual.com";
+        $email = "support@example.com";
         $sub = "TEST email from support laravel";
         $mes = "<p><strong><span style='color: green'>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</span></strong><br> sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
