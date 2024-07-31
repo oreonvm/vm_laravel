@@ -13,10 +13,10 @@
 
     <div class="container">
         <div class="row">
-            <div id="content" class="col-xs-6 col-sm-6 col-md-12">
+            <div id="content" class="col-12 col-xs-12 col-sm-12 col-md-12">
                 @include('layouts.category_tag')
 
-                <div id="main_center" class="col-xs-6 col-md-9">
+                <div id="" class="col-12 col-sm-12 col-xs-12 col-md-9 col-lg-9">
                     @if ($posts->count())
                         @foreach ($posts as $post)
                             <div class="block_post">
@@ -63,8 +63,7 @@
                         {{ $posts->appends(['s' => request()->s])->links('vendor.pagination.my_pagination') }}
                     @else
                         <p
-                            style="margin:0 auto; padding: 0 10px 50px; background-color: #e2e236; font-size: 18px; font-weight: 600;
-                    color: brown;">
+                            style="margin:0 auto; padding: 0 30px 50px; background-color: #e5e573; font-size: 18px; font-weight: 600;color: red;border-radius: 19px;">
                             <br><br>
                             Sorry, unfortunately nothing according to your request...
                         </p>
