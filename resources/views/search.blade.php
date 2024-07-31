@@ -40,7 +40,7 @@
 
                                 {{-- <img src="{{ asset('storage/' . $post->image) }}" width="200" alt=""> --}}
                                 <small>
-                                    <div class="date_post">{{ $post_date }}</div>
+                                    <div class="date_post">Last view: {{ $post_date }}</div>
                                 </small>
                                 &nbsp;&nbsp;<div class="data_views">
                                     <i class="fa fa-eye"></i><small>&nbsp;{{ $post->views }}</small>
