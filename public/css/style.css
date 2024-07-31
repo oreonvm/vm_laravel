@@ -304,6 +304,10 @@ li>a:only-child:after {
     overflow: hidden;
 }
 
+.block_post img {
+    width: 100px;
+}
+
 #sidebar .block_post {
     background-color: #f7eacb;
     width: 252px;
