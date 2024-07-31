@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@extends('layouts.footer')
+@extends('layouts.footer_account')
 
 @section('content')
     <nav>
